@@ -1,0 +1,13 @@
+   MMDUMP - sauvegarde de la carte Datel Mega Memory vers USB
+   par Soaresden - lecture seule, rien n'est ecrit sur la carte
+
+   Attente de la cle USB OK
+   Slot 1 : deja active (0x01)
+   Slot 2 : activee (sans MagicGate) + verifiee (0x13)
+
+   === Sauvegarde slot 2 ===
+   specs: ff ff 2b 00 02 10 00 00 40 00 00 52 5a
+   taille annoncee : 16384 pages / par repliement : 16384 pages
+   -> sauvegarde de 16384 pages (8 Mo)
+   -> mass:/BAKMEGAMEMORYMC/MEGAMEM_SLOT2_00.mcd
+   termine : 0 page(s) illisible(s), 0 avertissement(s) de checksum

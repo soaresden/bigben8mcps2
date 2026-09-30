@@ -1,0 +1,22 @@
+# MMBOOT.CNF - settings of MMBOOT.ELF. You normally don't need to edit it: in MMBOOT's menu,
+# TRIANGLE adds/removes a favourite and SQUARE sets/clears the auto-boot entry, and MMBOOT rewrites this file.
+#
+# Put it next to MMBOOT.ELF, or in mc?:/MMBOOT/, mc?:/PS2BBL/, mass:/MMBOOT/ or mass:/PS2BBL/.
+#
+# BOOT = <path>   Auto-boot entry, started after DELAY seconds (any button = menu, R1 = PS2 browser).
+#                 Several BOOT lines = fallbacks. No BOOT line = the menu opens at every boot.
+# FAV = <path>    Favourites, shown first in the menu.
+#                 mc?:    = mc0: or mc1:
+#                 mass?:  = any USB drive, or the internal exFAT/FAT32 HDD if HDD = 1
+#                 BROWSER = the PS2 browser
+# HDD = 1         Load the internal HDD driver (ps2dev9 + ata_bd, default): an exFAT/FAT32 HDD shows up as mass?:
+#                 HDD = 0 skips it (slightly faster start on consoles without a HDD)
+# USB_WAIT = 5    Seconds to wait for USB/HDD drives to be mounted
+# DELAY = 2       Countdown before the auto-boot entry
+
+BOOT = mass?:/APPS/OPNPS2LD.ELF
+FAV = mass?:/APPS/OPNPS2LD.ELF
+FAV = mc?:/BOOT/BOOT.ELF
+HDD = 1
+USB_WAIT = 5
+DELAY = 2
